@@ -17,9 +17,9 @@ export function TeamSection() {
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-8 max-w-5xl mx-auto">
           {team.map((member) => (
-            <Card key={member.id} className="text-center hover:shadow-lg transition-shadow duration-300">
+            <Card key={member.id} className="text-center hover:shadow-lg transition-shadow duration-300 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)]">
               <CardHeader>
                 {/* Avatar Placeholder */}
                 <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-primary/10 flex items-center justify-center">

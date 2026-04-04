@@ -13,6 +13,13 @@ export interface TeamMember {
   image?: string
 }
 
+export interface Facility {
+  id: number
+  src: string
+  alt: string
+  title: string
+}
+
 export interface ContactInfo {
   email: string
   phone?: string
