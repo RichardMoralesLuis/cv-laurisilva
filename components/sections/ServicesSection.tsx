@@ -1,17 +1,22 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { services } from '@/lib/data/services';
+import Image from 'next/image';
 import {
   Shield,
   Stethoscope,
   Fish,
   Building,
-  Bone,
   Wind,
   Feather,
   Home,
   PawPrint,
   Zap,
-  Leaf, Bird
+  Leaf,
+  Bird,
+  TreePine,
+  Truck,
+  Microscope,
+  ScanLine,
 } from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
 
@@ -22,13 +27,16 @@ const iconMap: Record<string, LucideIcon> = {
   Fish,
   Bird,
   Building,
-  Bone,
   Wind,
   Feather,
   Home,
   Zap,
   PawPrint,
-  Leaf
+  Leaf,
+  TreePine,
+  Truck,
+  Microscope,
+  ScanLine,
 };
 
 export function ServicesSection() {
@@ -52,15 +60,26 @@ export function ServicesSection() {
             return (
               <Card
                 key={service.id}
-                className="hover:shadow-lg transition-shadow duration-300 border-2 hover:border-primary/50"
+                className="relative overflow-hidden hover:shadow-lg transition-shadow duration-300 border-2 hover:border-primary/50"
               >
-                <CardHeader>
+                {service.image && (
+                  <>
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover scale-105 opacity-40"
+                    />
+                    <div className="absolute inset-0 bg-white/40" />
+                  </>
+                )}
+                <CardHeader className="relative z-10">
                   <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                     <Icon className="w-7 h-7 text-primary"/>
                   </div>
                   <CardTitle className="font-heading text-xl">{service.title}</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="relative z-10">
                   <CardDescription className="text-base leading-relaxed">
                     {service.description}
                   </CardDescription>

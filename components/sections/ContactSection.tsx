@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { contactInfo } from "@/lib/data/contact"
-import { MapPin, Mail, Phone, MessageCircle, Facebook, Instagram, Twitter } from "lucide-react"
+import { MapPin, Mail, MessageCircle, Instagram, Clock } from "lucide-react"
 
 export function ContactSection() {
-  // Google Maps coordinates for Calle Sevilla 24, La Laguna
-  const mapSrc = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.0!2d-16.3167!3d28.4833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI5JzAwLjAiTiAxNsKwMTknMDAuMCJX!5e0!3m2!1ses!2ses!4v1234567890`
+  // Google Maps embed for Calle Sevilla 24, Finca España, La Laguna
+  const mapSrc = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1752.0!2d-16.2980!3d28.4690!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI4JzA4LjQiTiAxNsKwMTcnNTIuOCJX!5e0!3m2!1ses!2ses!4v1700000000000`
 
   return (
     <section id="contacto" className="py-20 bg-cream">
@@ -65,55 +65,68 @@ export function ContactSection() {
               {/* Phone / WhatsApp */}
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  {contactInfo.whatsapp ? <MessageCircle className="w-6 h-6 text-primary" /> : <Phone className="w-6 h-6 text-primary" />}
+                  <MessageCircle className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Teléfono / WhatsApp</h4>
-                  {contactInfo.phone || contactInfo.whatsapp ? (
+                  <div className="flex flex-col gap-1">
                     <a
-                      href={contactInfo.whatsapp ? `https://wa.me/${contactInfo.whatsapp}` : `tel:${contactInfo.phone}`}
+                      href={`tel:${contactInfo.phone}`}
                       className="text-primary hover:underline"
                     >
-                      {contactInfo.phone || contactInfo.whatsapp}
+                      {contactInfo.phone}
                     </a>
-                  ) : (
-                    <p className="text-gray-500 italic">Disponible próximamente</p>
-                  )}
+                    <a
+                      href={`https://wa.me/${contactInfo.whatsapp}`}
+                      className="text-primary hover:underline flex items-center gap-1"
+                    >
+                      628 61 14 58 (WhatsApp)
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Horario */}
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Clock className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Horario</h4>
+                  <div className="text-gray-600 space-y-0.5">
+                    <p>Lunes a Viernes: 9:00 - 20:00</p>
+                    <p className="text-sm text-gray-500">Sábados, domingos y festivos: cerrado</p>
+                  </div>
                 </div>
               </div>
 
               {/* Social Media */}
-              <div>
-                <h4 className="font-semibold mb-3">Síguenos en:</h4>
-                <div className="flex gap-3">
-                  <button
-                    disabled={!contactInfo.socialMedia.facebook}
-                    className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-                    title={contactInfo.socialMedia.facebook ? "Facebook" : "Próximamente"}
-                  >
-                    <Facebook className="w-5 h-5 text-primary" />
-                  </button>
-                  <button
-                    disabled={!contactInfo.socialMedia.instagram}
-                    className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-                    title={contactInfo.socialMedia.instagram ? "Instagram" : "Próximamente"}
-                  >
-                    <Instagram className="w-5 h-5 text-primary" />
-                  </button>
-                  <button
-                    disabled={!contactInfo.socialMedia.twitter}
-                    className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
-                    title={contactInfo.socialMedia.twitter ? "Twitter" : "Próximamente"}
-                  >
-                    <Twitter className="w-5 h-5 text-primary" />
-                  </button>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Instagram className="w-6 h-6 text-primary" />
                 </div>
-                <p className="text-xs text-gray-500 mt-2">Redes sociales disponibles próximamente</p>
+                <div>
+                  <h4 className="font-semibold mb-1">Síguenos</h4>
+                  <a
+                    href={contactInfo.socialMedia.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary hover:underline"
+                  >
+                    @cvlaurisilva
+                  </a>
+                </div>
               </div>
 
               {/* CTA Buttons */}
-              <div className="space-y-3 pt-4">
-                <Button variant="default" size="lg" className="w-full" asChild>
+              <div className="flex flex-col sm:flex-row gap-3 pt-4">
+                <Button variant="default" size="lg" className="flex-1" asChild>
+                  <a href={`https://wa.me/${contactInfo.whatsapp}`} target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-5 h-5 mr-2" />
+                    WhatsApp
+                  </a>
+                </Button>
+                <Button variant="outline" size="lg" className="flex-1" asChild>
                   <a href={`mailto:${contactInfo.email}`}>
                     <Mail className="w-5 h-5 mr-2" />
                     Enviar Email

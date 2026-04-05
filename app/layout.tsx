@@ -43,7 +43,7 @@ export default function RootLayout({
     image: "/images/logo.jpeg",
     "@id": "https://laurisilva.com",
     url: "https://laurisilva.com",
-    telephone: "Disponible próximamente",
+    telephone: "+34922670243",
     email: "cvlaurisilva@gmail.com",
     address: {
       "@type": "PostalAddress",

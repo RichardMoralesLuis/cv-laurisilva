@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { Instagram } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -11,12 +12,12 @@ export function Footer() {
           {/* Logo y descripción */}
           <div className="flex flex-col items-center md:items-start">
             <div className="flex items-center gap-3 mb-4">
-              <div className="relative w-10 h-10">
+              <div className="relative w-10 h-10 rounded-full overflow-hidden">
                 <Image
                   src="/images/logo.jpeg"
                   alt="Laurisilva Logo"
                   fill
-                  className="object-contain"
+                  className="object-cover scale-125"
                 />
               </div>
               <span className="font-heading font-bold text-xl">Laurisilva</span>
@@ -49,8 +50,25 @@ export function Footer() {
               <a href="mailto:cvlaurisilva@gmail.com" className="hover:text-primary transition-colors">
                 cvlaurisilva@gmail.com
               </a>
+              <p>
+                <a href="tel:922670243" className="hover:text-primary transition-colors">922 67 02 43</a>
+                {" / "}
+                <a href="tel:628611458" className="hover:text-primary transition-colors">628 61 14 58</a>
+              </p>
               <p>Calle Sevilla 24</p>
               <p>38250, Finca España, La Laguna</p>
+              <p className="mt-2">L-V: 9:00 - 20:00</p>
+              <div className="mt-3">
+                <a
+                  href="https://www.instagram.com/cvlaurisilva/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 hover:text-primary transition-colors"
+                >
+                  <Instagram className="w-5 h-5" />
+                  @cvlaurisilva
+                </a>
+              </div>
             </div>
           </div>
         </div>

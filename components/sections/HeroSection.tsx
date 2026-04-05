@@ -22,12 +22,12 @@ export function HeroSection() {
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center text-white">
         {/* Logo */}
-        <div className="relative w-48 h-48 md:w-60 md:h-60 mx-auto mb-8">
+        <div className="relative w-56 h-56 md:w-72 md:h-72 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl">
           <Image
             src="/images/logo.jpeg"
             alt="Laurisilva Logo"
             fill
-            className="object-contain drop-shadow-2xl"
+            className="object-cover scale-125 drop-shadow-2xl"
             priority
           />
         </div>

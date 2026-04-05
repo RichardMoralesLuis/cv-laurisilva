@@ -45,12 +45,12 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="#inicio" className="flex items-center gap-3">
-            <div className="relative w-16 h-16 md:w-20 md:h-20">
+            <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden">
               <Image
                 src="/images/logo.jpeg"
                 alt="Laurisilva Logo"
                 fill
-                className="object-contain"
+                className="object-cover scale-125"
               />
             </div>
             <span

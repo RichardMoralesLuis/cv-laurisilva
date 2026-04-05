@@ -3,6 +3,7 @@ export interface Service {
   title: string
   description: string
   icon: string
+  image?: string
 }
 
 export interface TeamMember {
@@ -31,8 +32,6 @@ export interface ContactInfo {
     full: string
   }
   socialMedia: {
-    facebook?: string
     instagram?: string
-    twitter?: string
   }
 }

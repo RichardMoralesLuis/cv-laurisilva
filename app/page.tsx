@@ -6,11 +6,13 @@ import { FacilitiesSection } from "@/components/sections/FacilitiesSection"
 import { TeamSection } from "@/components/sections/TeamSection"
 import { StoreSection } from "@/components/sections/StoreSection"
 import { ContactSection } from "@/components/sections/ContactSection"
+import { WhatsAppButton } from "@/components/ui/WhatsAppButton"
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       <Header />
+      <WhatsAppButton />
       <main>
         <HeroSection />
         <ServicesSection />

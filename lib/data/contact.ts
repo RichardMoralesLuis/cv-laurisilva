@@ -2,8 +2,8 @@ import { ContactInfo } from "@/types"
 
 export const contactInfo: ContactInfo = {
   email: "cvlaurisilva@gmail.com",
-  phone: undefined, // Disponible próximamente
-  whatsapp: undefined, // Disponible próximamente
+  phone: "922 67 02 43",
+  whatsapp: "34628611458",
   address: {
     street: "Calle Sevilla 24",
     city: "Finca España, La Laguna",
@@ -11,8 +11,6 @@ export const contactInfo: ContactInfo = {
     full: "Calle Sevilla 24, 38250, Finca España, La Laguna",
   },
   socialMedia: {
-    facebook: undefined,
-    instagram: undefined,
-    twitter: undefined,
+    instagram: "https://www.instagram.com/cvlaurisilva/",
   },
 }
