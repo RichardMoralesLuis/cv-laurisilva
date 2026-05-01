@@ -29,6 +29,7 @@ export function TeamSection() {
                       src={member.image}
                       alt={member.name}
                       fill
+                      sizes="96px"
                       className="object-cover"
                       style={{ objectPosition: member.imagePosition ?? "center" }}
                     />

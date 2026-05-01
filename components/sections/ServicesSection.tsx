@@ -69,12 +69,14 @@ export function ServicesSection() {
                       alt=""
                       aria-hidden
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover scale-110 blur-xl opacity-50"
                     />
                     <Image
                       src={service.image}
                       alt={service.title}
                       fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-contain opacity-50"
                     />
                     <div className="absolute inset-0 bg-white/50" />

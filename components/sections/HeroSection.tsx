@@ -34,11 +34,11 @@ export function HeroSection() {
 
         {/* Heading */}
         <h1 className="font-heading font-bold text-4xl md:text-6xl lg:text-7xl mb-4 drop-shadow-lg">
-          Laurisilva
+          Laurisilva{" "}
+          <span className="block text-3xl md:text-4xl lg:text-5xl font-semibold mt-1">
+            Clínica Veterinaria en La Laguna
+          </span>
         </h1>
-        <p className="font-heading text-xl md:text-2xl lg:text-3xl mb-6 text-gray-100">
-          Clínica Veterinaria
-        </p>
 
         {/* Tagline */}
         <p className="text-lg md:text-xl lg:text-2xl mb-10 max-w-3xl mx-auto font-medium drop-shadow-md">

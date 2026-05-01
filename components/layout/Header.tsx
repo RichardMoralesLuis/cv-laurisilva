@@ -50,6 +50,7 @@ export function Header() {
                 src="/images/logo.jpeg"
                 alt="Laurisilva Logo"
                 fill
+                sizes="(max-width: 768px) 64px, 80px"
                 className="object-cover scale-125"
               />
             </div>

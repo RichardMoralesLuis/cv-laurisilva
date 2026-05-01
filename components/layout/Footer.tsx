@@ -17,6 +17,7 @@ export function Footer() {
                   src="/images/logo.jpeg"
                   alt="Laurisilva Logo"
                   fill
+                  sizes="40px"
                   className="object-cover scale-125"
                 />
               </div>
@@ -29,7 +30,7 @@ export function Footer() {
 
           {/* Enlaces rápidos */}
           <div className="flex flex-col items-center">
-            <h3 className="font-heading font-semibold mb-4">Enlaces Rápidos</h3>
+            <h2 className="font-heading font-semibold mb-4 text-base">Enlaces Rápidos</h2>
             <nav className="flex flex-col gap-2 text-sm">
               <Link href="#inicio" className="text-gray-300 hover:text-primary transition-colors">
                 Inicio
@@ -45,7 +46,7 @@ export function Footer() {
 
           {/* Contacto */}
           <div className="flex flex-col items-center md:items-end">
-            <h3 className="font-heading font-semibold mb-4">Contacto</h3>
+            <h2 className="font-heading font-semibold mb-4 text-base">Contacto</h2>
             <div className="flex flex-col gap-2 text-sm text-gray-300 text-center md:text-right">
               <a href="mailto:cvlaurisilva@gmail.com" className="hover:text-primary transition-colors">
                 cvlaurisilva@gmail.com
