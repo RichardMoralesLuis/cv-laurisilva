@@ -9,8 +9,8 @@ export function HeroSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/sala.jpeg"
-          alt="Sala de espera Clínica Laurisilva"
+          src="/images/Portada.jpeg"
+          alt="Clínica Veterinaria Laurisilva"
           fill
           className="object-cover"
           priority
@@ -22,7 +22,7 @@ export function HeroSection() {
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center text-white">
         {/* Logo */}
-        <div className="relative w-56 h-56 md:w-72 md:h-72 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl">
+        <div className="relative w-36 h-36 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl">
           <Image
             src="/images/logo.jpeg"
             alt="Laurisilva Logo"

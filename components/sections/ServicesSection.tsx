@@ -66,11 +66,18 @@ export function ServicesSection() {
                   <>
                     <Image
                       src={service.image}
+                      alt=""
+                      aria-hidden
+                      fill
+                      className="object-cover scale-110 blur-xl opacity-50"
+                    />
+                    <Image
+                      src={service.image}
                       alt={service.title}
                       fill
-                      className="object-cover scale-105 opacity-40"
+                      className="object-contain opacity-50"
                     />
-                    <div className="absolute inset-0 bg-white/40" />
+                    <div className="absolute inset-0 bg-white/50" />
                   </>
                 )}
                 <CardHeader className="relative z-10">

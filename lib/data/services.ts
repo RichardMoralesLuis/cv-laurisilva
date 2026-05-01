@@ -6,6 +6,7 @@ export const services: Service[] = [
     title: "Medicina Preventiva",
     description: "Asesoramiento y programas de prevención para mascotas, centros de cría y recintos zoológicos.",
     icon: "Shield",
+    image: "/images/servicios/medicina-preventiva.jpeg",
   },
   {
     id: "consultas-especializadas",
@@ -18,6 +19,7 @@ export const services: Service[] = [
     title: "Medicina y Cirugía de Animales Exóticos",
     description: "Diagnóstico, tratamiento médico y quirúrgico para todo tipo de animales exóticos.",
     icon: "Leaf",
+    image: "/images/servicios/exoticos.jpeg",
   },
   {
     id: "peces-anfibios",
@@ -31,6 +33,7 @@ export const services: Service[] = [
     title: "Medicina de Grandes Animales y Aves de Corral",
     description: "Servicios veterinarios especializados para bovinos, caprinos, ovinos, suidos (cerdos) y aves de corral.",
     icon: "Bird",
+    image: "/images/servicios/grandes-animales.jpeg",
   },
   {
     id: "nucleos-zoologicos",
@@ -73,23 +76,26 @@ export const services: Service[] = [
     title: "Medicina Perro y Gato",
     description: "Consultas de especialidad, medicina preventiva y cirugía general para mascotas convencionales.",
     icon: "PawPrint",
+    image: "/images/servicios/perro-gato.jpeg",
   },
   {
     id: "laboratorio",
     title: "Pruebas de Laboratorio",
     description: "Laboratorio propio y externo para análisis clínicos completos.",
     icon: "Microscope",
+    image: "/images/servicios/laboratorio.jpeg",
   },
   {
     id: "pruebas-imagen",
     title: "Pruebas de Imagen",
     description: "Radiografías y ecografía para un diagnóstico preciso.",
     icon: "ScanLine",
+    image: "/images/servicios/pruebas-imagen.jpeg",
   },
   {
     id: "domicilios",
     title: "Servicio a Domicilio",
-    description: "Atención veterinaria en tu hogar para mayor comodidad de tus animales.",
+    description: "Consulta condiciones llamándonos o por WhatsApp.",
     icon: "Truck",
   },
 ]

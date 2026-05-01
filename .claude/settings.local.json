@@ -4,7 +4,17 @@
       "Bash(pnpm add:*)",
       "Bash(pnpm dlx:*)",
       "Bash(pnpm run build:*)",
-      "Bash(copy:*)"
+      "Bash(copy:*)",
+      "Bash(test:*)",
+      "Bash(cp \"/c/Users/Richard/Downloads/fotos clinica/foto 1.jpeg\" /c/Users/Richard/project/cv-laurisilva/public/images/recepcion-clinica-veterinaria.jpeg)",
+      "Bash(cp \"/c/Users/Richard/Downloads/fotos clinica/foto 2.jpeg\" /c/Users/Richard/project/cv-laurisilva/public/images/consulta-veterinaria-animales.jpeg)",
+      "Bash(cp \"/c/Users/Richard/Downloads/fotos clinica/foto 3.jpeg\" /c/Users/Richard/project/cv-laurisilva/public/images/sala-espera-productos-veterinarios.jpeg)",
+      "Bash(cp \"/c/Users/Richard/Downloads/fotos clinica/foto 4.jpeg\" /c/Users/Richard/project/cv-laurisilva/public/images/laboratorio-analisis-veterinario.jpeg)",
+      "Bash(cp \"/c/Users/Richard/Downloads/fotos clinica/foto 5.jpeg\" /c/Users/Richard/project/cv-laurisilva/public/images/consulta-animales-exoticos.jpeg)",
+      "Bash(pnpm build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ]
   }
 }

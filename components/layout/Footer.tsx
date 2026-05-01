@@ -57,7 +57,8 @@ export function Footer() {
               </p>
               <p>Calle Sevilla 24</p>
               <p>38250, Finca España, La Laguna</p>
-              <p className="mt-2">L-V: 9:00 - 20:00</p>
+              <p className="mt-2">L-J: 9:30-13:30 y 17:00-20:00</p>
+              <p>V: 10:00-18:00</p>
               <div className="mt-3">
                 <a
                   href="https://www.instagram.com/cvlaurisilva/"
