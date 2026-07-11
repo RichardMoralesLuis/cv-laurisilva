@@ -95,7 +95,7 @@ export function ContactSection() {
                   <h4 className="font-semibold mb-1">Horario</h4>
                   <div className="text-gray-600 space-y-0.5">
                     <p>Lunes a Jueves: 9:30 - 13:30 y 17:00 - 20:00</p>
-                    <p>Viernes: 10:00 - 18:00</p>
+                    <p>Viernes: 10:00 - 16:00</p>
                     <p className="text-sm text-gray-500">Sábados, domingos y festivos: cerrado</p>
                   </div>
                 </div>
