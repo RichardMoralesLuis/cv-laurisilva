@@ -71,7 +71,7 @@ export function ContactSection() {
                   <h4 className="font-semibold mb-1">Teléfono / WhatsApp</h4>
                   <div className="flex flex-col gap-1">
                     <a
-                      href={`tel:${contactInfo.phone}`}
+                      href={`tel:${contactInfo.phone?.replace(/\s/g, "")}`}
                       className="text-primary hover:underline"
                     >
                       {contactInfo.phone}
