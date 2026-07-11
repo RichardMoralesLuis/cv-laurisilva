@@ -2,6 +2,16 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ShoppingBag, MapPin, Clock } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
+
+const brands = [
+  { name: "Oxbow", logo: "/images/marcas/oxbow.jpeg" },
+  { name: "Bunny", logo: "/images/marcas/bunny.jpeg" },
+  { name: "Harrison's", logo: "/images/marcas/harrisons.jpeg" },
+  { name: "Amanova", logo: "/images/marcas/amanova.jpeg" },
+  { name: "Leonardo", logo: "/images/marcas/leonardo.jpeg" },
+  { name: "ZuPreem", logo: "/images/marcas/zupreem.jpeg" },
+]
 
 export function StoreSection() {
   return (
@@ -53,6 +63,28 @@ export function StoreSection() {
               </div>
             </CardContent>
           </Card>
+
+          {/* Marcas */}
+          <div className="mt-16">
+            <h3 className="font-heading font-semibold text-xl md:text-2xl text-dark text-center mb-8">
+              Trabajamos con las mejores marcas
+            </h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center">
+              {brands.map((brand) => (
+                <div
+                  key={brand.name}
+                  className="relative aspect-square bg-white rounded-lg border border-gray-200 hover:border-primary/50 hover:shadow-md transition-all p-4 flex items-center justify-center"
+                >
+                  <Image
+                    src={brand.logo}
+                    alt={`Logo ${brand.name}`}
+                    fill
+                    className="object-contain p-4"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

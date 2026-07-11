@@ -13,6 +13,7 @@ export const services: Service[] = [
     title: "Consultas Especializadas (Traumatología y Oftalmología)",
     description: "Atención veterinaria especializada en traumatología y oftalmología.",
     icon: "Stethoscope",
+    image: "/images/servicios/consultas-especializadas.jpeg",
   },
   {
     id: "exoticos",
@@ -38,38 +39,44 @@ export const services: Service[] = [
   {
     id: "nucleos-zoologicos",
     title: "Gestión de Núcleos Zoológicos",
-    description: "Asesoramiento, redacción, legalización y creación de núcleos zoológicos.",
+    description: "Asesoramiento, redacción, legalización y creación de núcleos zoológicos. Creación y tramitación de REGAC.",
     icon: "Building",
+    image: "/images/servicios/nucleos-zoologicos.jpeg",
   },
   {
     id: "columbofilia",
     title: "Medicina de Palomares (Colombofilia)",
     description: "Servicio especializado en la salud y rendimiento de palomares.",
     icon: "Wind",
+    image: "/images/servicios/columbofilia.jpeg",
   },
   {
     id: "canaricultura",
     title: "Medicina de Paseriformes (Canaricultura)",
     description: "Atención para criaderos de canarios y aves paseriformes.",
     icon: "Feather",
+    image: "/images/servicios/canaricultura.jpeg",
   },
   {
     id: "medicina-criaderos",
     title: "Asesoramiento en Criaderos",
     description: "Medicina especializada y consultoría técnica para centros de cría.",
     icon: "Home",
+    image: "/images/servicios/criaderos.jpeg",
   },
   {
     id: "cetreria",
     title: "Medicina de Rapaces (Cetrería)",
     description: "Gestión sanitaria y medicina para aves de presa.",
     icon: "Zap",
+    image: "/images/servicios/cetreria.jpeg",
   },
   {
     id: "fauna-salvaje",
     title: "Medicina de Fauna Salvaje y Silvestre",
     description: "Atención en centros zoológicos o centros de recuperación de fauna.",
     icon: "TreePine",
+    image: "/images/servicios/fauna-salvaje.jpeg",
   },
   {
     id: "perro-gato",
@@ -97,5 +104,6 @@ export const services: Service[] = [
     title: "Servicio a Domicilio",
     description: "Consulta condiciones llamándonos o por WhatsApp.",
     icon: "Truck",
+    image: "/images/servicios/domicilios.jpeg",
   },
 ]
