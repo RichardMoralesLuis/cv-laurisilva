@@ -5,7 +5,7 @@ import { MapPin, Mail, MessageCircle, Instagram, Clock } from "lucide-react"
 
 export function ContactSection() {
   // Google Maps embed for Calle Sevilla 24, Finca España, La Laguna
-  const mapSrc = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1752.0!2d-16.2980!3d28.4690!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI4JzA4LjQiTiAxNsKwMTcnNTIuOCJX!5e0!3m2!1ses!2ses!4v1700000000000`
+  const mapSrc = `https://maps.google.com/maps?q=28.47724259536949,-16.30097361306137&t=&z=17&ie=UTF8&iwloc=&output=embed`
 
   return (
     <section id="contacto" className="py-20 bg-cream">

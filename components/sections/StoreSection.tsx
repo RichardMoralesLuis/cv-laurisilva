@@ -40,7 +40,7 @@ export function StoreSection() {
                     Visítanos en nuestra clínica
                   </h3>
                   <p className="text-gray-600 text-lg max-w-xl">
-                    Disponemos de productos de alimentación, complementos y accesorios para tus mascotas. Nuestro equipo te asesorará para encontrar lo que mejor se adapte a las necesidades de tu animal.
+                    Disponemos de productos de alimentación y complementos para tus mascotas. Nuestro equipo te asesorará para encontrar lo que mejor se adapte a las necesidades de tu animal.
                   </p>
                 </div>
 
